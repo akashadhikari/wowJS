@@ -1,2 +1,3 @@
-# wowJs
+# wowJS
 You heard that right!
+
