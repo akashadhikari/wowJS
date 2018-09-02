@@ -163,3 +163,54 @@ const today = new Date()
 console.log(today)
 console.log(typeof today)
 ```
+
+## Type conversion and coercion
+
+```javascript
+
+let val;
+val = 5;
+console.log(typeof val);
+console.log(val.length); // type number has no length
+
+// Converting Number to String
+val = String(7);
+console.log(typeof val);
+console.log(val.length); // type string has certain length
+
+// Converting Date to String
+
+val = String(new Date());
+console.log(val);
+console.log(typeof val);
+
+// toString() works as well
+
+val = (7).toString();
+console.log(typeof val);
+
+val = (new Date()).toString();
+console.log(typeof val);
+
+// Converting String to Number
+
+val = Number('5');
+console.log(typeof val);
+console.log(val.toFixed(2)); // Decimal point fix (eg: 5.00)
+
+// You can also use parseInt() and parseFloat()
+
+val = parseInt('5.66');
+console.log(val);
+val = parseFloat('5.66');
+console.log(val);
+
+// Javascript type coercion
+
+const val1 = String(5);
+const val2 = 1;
+
+const sum = val1 + val2;
+
+console.log(sum); // concatinates String 5 and number 6 to a String.
+```
